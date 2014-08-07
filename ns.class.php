@@ -14,5 +14,13 @@ Class NS {
     $this->username = $username;
     $this->password = $password;
   }
-
+  
+  private function getUsername() {
+		  return $this->username;
+	 }
+	 
+  private function getPassword() {
+	   return $this->password;
+  }
+  
 }
