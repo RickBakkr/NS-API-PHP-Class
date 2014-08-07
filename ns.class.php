@@ -14,6 +14,15 @@ Class NS {
     		$this->username = $username;
  		$this->password = $password;
   	}
+  	
+  	public function getStations($version = 2) {
+  		if($version == 2) {
+  			$url = 'http://webservices.ns.nl/ns-api-stations-v2';
+	  	}else{
+	  		$url = 'http://webservices.ns.nl/ns-api-stations';
+	  	}
+	  	return new SimpleXMLElement($this->cURL($url));
+  	}
   
   	private function getUsername() {
 		return $this->username;
