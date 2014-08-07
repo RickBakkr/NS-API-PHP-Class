@@ -18,7 +18,7 @@ Class NS {
   	public function getStations($version = 2) {
   		if($version == 2) {
   			$url = 'http://webservices.ns.nl/ns-api-stations-v2';
-	  	}else{
+	  	}elseif($version == 1) {
 	  		$url = 'http://webservices.ns.nl/ns-api-stations';
 	  	}
 	  	return new SimpleXMLElement($this->cURL($url));
