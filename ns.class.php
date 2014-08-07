@@ -7,20 +7,20 @@
  
 Class NS {
 
-  private $username;
-  private $password;
+	private $username;
+	private $password;
 
-  public function __construct($username, $password) {
-    $this->username = $username;
-    $this->password = $password;
-  }
+	public function __construct($username, $password) {
+    		$this->username = $username;
+ 		$this->password = $password;
+  	}
   
-  private function getUsername() {
-		  return $this->username;
-	 }
+  	private function getUsername() {
+		return $this->username;
+	}
 	 
-  private function getPassword() {
-	   return $this->password;
-  }
+  	private function getPassword() {
+		return $this->password;
+  	}
   
 }
