@@ -35,7 +35,7 @@ Class NS {
   	private function cURL($url) {
   		$ch = curl_init($url);
 	        curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
-	        curl_setopt($ch, CURLOPT_USERPWD,  $this->getUsername().":". $this->getPassword());
+	        curl_setopt($ch, CURLOPT_USERPWD,  $this->getUsername() . ":" . $this->getPassword());
 	        curl_setopt($ch, CURLOPT_TIMEOUT, 0);
 	        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 	        $result = curl_exec($ch);
